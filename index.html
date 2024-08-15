@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mian.css">
+
+</head>
+<body >
+
+<div class="container p-5  ">
+
+    <h1 class=" pb-3 mb-3 border-bottom text-center title1 ">Product <span class="text-danger">Management</span> System </h1>
+
+<div class="form-group pb-4 pt-3 ">
+    <label for="productName">Product Name</label>
+  <input onclick="validateName()" type="text" id="productName" class="form-control border-5 " placeholder="Enter Product Name" >
+  <p id="invalidName" class="text-danger d-none">Please Enter Valid Name (2 or more Characters)</p>  
+</div> 
+<div class="form-group pb-4 ">
+    <label for="productPrice">Product Price</label>
+  <input onclick="validatePrice()" type="number" id="productPrice" class="form-control" placeholder="Enter Product Price" > 
+  <p id="invalidPrice" class="text-danger d-none">Please Enter 4 Numbers </p>  
+ 
+</div> 
+<div class="form-group pb-4">
+    <label for="productCateg">Product Category</label>
+  <input onclick="validateCategory()" type="text" id="productCateg" class="form-control"  placeholder="Enter Product Category">  
+  <p id="invalidCateg" class="text-danger d-none">Please Enter 1 Capital Character </p>  
+
+
+</div> 
+<div class="form-group pb-4">
+    <label for="productDes">Product Description</label>
+  <input onclick="validateDescription()" type="text" id="productDes" class="form-control"  placeholder="Enter Product Category">
+  <p id="invalidDes" class="text-danger d-none">Please Enter Description </p>  
+
+
+</div> 
+
+
+
+
+
+
+<div class="form-group text-center pb-4 ">
+<label for="search  " class="pb-2 ">  Search Product</label>
+<input type="text"  oninput="searchProduct(this.value)" class="form-control "  placeholder="search with product name ">  
+</div> 
+
+
+
+
+<button class="btn btn-outline-light me-4"  onclick="addProduct()">Add Product </button>
+<button class="btn btn-light d-none " onclick="saveUpdate()" id="savebtn" >Save Changes</button>
+
+<table class="text-center table-bordered table table-dark text-white my-4">
+
+    <thead >
+        <th>Index</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+
+        <th> Update</th>
+        <th>Delete</th>
+
+    </thead>
+
+    <tbody  id="dataList">
+       
+    </tbody>
+
+</table>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mian.js"></script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-image: url("../img/textured-metal-background.jpg");
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    color: floralwhite;
+}
+
+
+.title1{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 66px;
+
+    
+}
+
